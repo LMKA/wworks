@@ -1,6 +1,9 @@
 # wworks
 > a light multiprocessing/multithreading work dispatcher for python.
 
+[![Generic badge](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/LMKA/wworks/blob/master/LICENSE)
+[![GitLab tags](https://badgen.net/github/tags/LMKA/wworks/)](https://github.com/LMKA/wworks/-/tags)
 
 wworks (Wrapped Works) is a work manager that uses both ProcessPoolExecutor and ThreadPoolExecutor to dispatch work by workload over processes and/or threads.
 
