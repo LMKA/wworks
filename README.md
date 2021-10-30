@@ -2,8 +2,8 @@
 > a light multiprocessing/multithreading work dispatcher for python.
 
 [![Generic badge](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/LMKA/wworks/blob/master/LICENSE)
 [![GitLab tags](https://badgen.net/github/tags/LMKA/wworks/)](https://github.com/LMKA/wworks/-/tags)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 wworks (Wrapped Works) is a work manager that uses both ProcessPoolExecutor and ThreadPoolExecutor to dispatch work by workload over processes and/or threads.
 
@@ -131,17 +131,22 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 * 0.1.0
     * First version of wworks package
 
+
 ## Meta
 
-Mehdi LAKBIR –  twitter: [@mehdi.lakbir](https://twitter.com/mehdi.lakbir)
+<b>Mehdi LAKBIR</b>
 
-Distributed under the MIT license. See ``LICENSE`` for more information.
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40mehdilakbir)](https://twitter.com/mehdilakbir)
 
-[https://github.com/lmka](https://github.com/lmka/)
+Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
+
+[https://https://github.com/LMKA/wworks](https://https://github.com/LMKA/wworks)
+
+
 
 ## Contributing
 
-1. Fork it (<https://github.com/lmka/wworks/fork>)
+1. Fork it (<https://github.com/LMKA/wworks/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
