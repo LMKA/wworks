@@ -1,7 +1,5 @@
 from functools import reduce
 
-import pytest
-
 from wworks.swworks import WorkManager
 
 TEST_DATA_LENGTH = 10

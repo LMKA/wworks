@@ -19,6 +19,9 @@ class TasksPool:
         progress_color (str, optional): progress bar color if show_progress is enabled. Defaults to '#4052B5'.
         nb_tasks (int, optional): maximun tasks pool size, should never be greather than 399. Defaults to 64.
         show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
+    
+    Methods:
+        do ((str, Any, list) -> list)
     """
     progress_cols: int = PROGRESS_COLS
     progress_color: str = "#4052B5" # light blue
@@ -77,6 +80,9 @@ class WorkersPool:
         progress_color (str, optional): progress bar color if show_progress is enabled. Defaults to '#00f6ff'.
         nb_workers (int, optional): number of cpu to use. Defaults to multiprocessing.cpu_count().
         show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
+
+    Methods:
+        do ((str, Any, list) -> list)
     """
     progress_cols: int = PROGRESS_COLS
     progress_color: str = "#00f6ff" # light cyan

@@ -1,5 +1,6 @@
-from wworks.pools import WorkersPool, TasksPool
 from functools import reduce
+
+from wworks.pools import WorkersPool, TasksPool
 
 TEST_DATA_LENGTH = 10
 

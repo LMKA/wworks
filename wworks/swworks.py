@@ -22,6 +22,11 @@ class WorkManager:
         max_workers (int, optional): number of cpu to use. Defaults to multiprocessing.cpu_count().
         show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
         show_debug (bool, optional): show debug msg on start and end or each method if True. Defaults to False.
+
+    Methods:
+        chunks ((str, int) -> Iterator[list])
+        work ((str, Any, Union[List, int]) -> List[Tuple[str, Tuple, Any]])
+        dispatch ((Any, Union[List, int], int?) -> List[Tuple[str, List[Tuple[str, Tuple, Any]]]])
     """
     work_name: str = "task"
     max_tasks: int = 64
