@@ -1,14 +1,14 @@
 # wworks
 > a light multiprocessing/multithreading work dispatcher for python.
 
-[![Generic badge](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
-[![PyPI version shields.io](https://img.shields.io/pypi/v/wworks.svg)](https://pypi.org/project/wworks/)
-[![GitLab tags](https://badgen.net/github/tags/LMKA/wworks/)](https://github.com/LMKA/wworks/-/tags)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub version](https://badge.fury.io/gh/LMKA%2Fwworks.svg)](https://badge.fury.io/gh/LMKA%2Fwworks)
+[![GitHub Stars](https://badgen.net/github/license/LMKA/wworks)](https://github.com/LMKA/wworks/blob/master/LICENSE)
+
+[![Python compatible versions](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
 
 wworks (Wrapped Works) is a work manager that uses both ProcessPoolExecutor and ThreadPoolExecutor to dispatch work by workload over processes and/or threads.
 
-
+---
 ## Installation
 
 Check your python version (must be >= 3.7)
@@ -24,7 +24,7 @@ Install wworks package
 > pip install wworks
 ```
 
-
+---
 ## Usage examples
 
 <details open> 
@@ -126,27 +126,58 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 
 </details>
 
-
+---
 ## Release History
+
+[![PyPI Package version](https://badgen.net/pypi/v/wworks)](https://pypi.org/project/wworks)
+[![GitHub Lastest tag](https://badgen.net/github/tag/LMKA/wworks)](https://github.com/LMKA/wworks/tags)
+[![GitLab Tags](https://badgen.net/github/tags/LMKA/wworks/)](https://github.com/LMKA/wworks/tags)
+
 
 * 0.1.0
     * First version of wworks package
 
 
-## Meta
-
-Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
-
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40melakbir)](https://twitter.com/melakbir)
-
-- github: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
-
-- pypi: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
-
+---
 ## Contributing
+
+[![GitHub Stars](https://badgen.net/github/stars/LMKA/wworks)](https://github.com/LMKA/wworks/stargazers)
+[![GitHub Forks](https://badgen.net/github/forks/LMKA/wworks)](https://github.com/LMKA/wworks/network/members)
+[![GitHub Contributors](https://badgen.net/github/contributors/LMKA/wworks)](https://github.com/LMKA/wworks/graphs/contributors)
+
+[![GitHub Issues](https://badgen.net/github/issues/LMKA/wworks)](https://github.com/LMKA/wworks/issues)
+[![GitHub PRs](https://badgen.net/github/prs/LMKA/wworks)](https://github.com/LMKA/wworks/pulls)
+[![GitHub Open Issues](https://badgen.net/github/open-issues/LMKA/wworks)](https://GitHub.com/LMKA/wworks/issues?q=is%3Aopen)
+[![GitHub Open PRs](https://badgen.net/github/open-prs/LMKA/wworks)](https://github.com/LMKA/wworks/issues?q=is%3Aopen)
+
 
 1. Fork it (<https://github.com/LMKA/wworks/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
+
+---
+## FAQ
+
+
+
+
+```sh
+Work in progress ...
+```
+
+
+
+
+---
+## Meta
+[![Twitter Profile url](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=%40melakbir)](https://twitter.com/melakbir)
+
+Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
+
+
+- github: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
+
+- pypi: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
+

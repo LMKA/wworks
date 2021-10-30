@@ -1,10 +1,12 @@
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor, as_completed
 from multiprocessing import cpu_count
+from shutil import get_terminal_size
 from dataclasses import dataclass
 from typing import Iterable
 
 from tqdm.auto import trange
 
+PROGRESS_COLS = min(80, int(get_terminal_size()[0]*0.85))
 
 @dataclass
 class TasksPool:
@@ -13,12 +15,12 @@ class TasksPool:
     Wrapper arround concurrent.futures.ThreadPoolExecutor used to dispatch work_to_do over its work_data.
 
     Attributes:
-        progress_cols (str, optional): progress bar columns. Defaults to 100.
+        progress_cols (str, optional): progress bar columns. Defaults to min(80, terminal_size*0.85).
         progress_color (str, optional): progress bar color if show_progress is enabled. Defaults to '#4052B5'.
         nb_tasks (int, optional): maximun tasks pool size, should never be greather than 399. Defaults to 64.
         show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
     """
-    progress_cols: int = 100
+    progress_cols: int = PROGRESS_COLS
     progress_color: str = "#4052B5" # light blue
     nb_tasks: int = 64
     show_progress: bool = False
@@ -76,7 +78,7 @@ class WorkersPool:
         nb_workers (int, optional): number of cpu to use. Defaults to multiprocessing.cpu_count().
         show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
     """
-    progress_cols: int = 100
+    progress_cols: int = PROGRESS_COLS
     progress_color: str = "#00f6ff" # light cyan
     nb_workers: int = cpu_count()
     show_progress: bool = False
