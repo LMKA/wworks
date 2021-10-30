@@ -135,12 +135,9 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 
 ## Meta
 
-<b>Mehdi LAKBIR</b>
-
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40mehdilakbir)](https://twitter.com/mehdilakbir)
-
 Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
 
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40melakbir)](https://twitter.com/melakbir)
 
 - github: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
 
