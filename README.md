@@ -2,6 +2,7 @@
 > a light multiprocessing/multithreading work dispatcher for python.
 
 [![Generic badge](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/wworks.svg)](https://pypi.org/project/wworks/)
 [![GitLab tags](https://badgen.net/github/tags/LMKA/wworks/)](https://github.com/LMKA/wworks/-/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -140,9 +141,10 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 
 Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
 
-[https://https://github.com/LMKA/wworks](https://https://github.com/LMKA/wworks)
 
+- github: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
 
+- pypi: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
 
 ## Contributing
 

@@ -5,7 +5,7 @@ with open("README.md", encoding="utf-8") as f:
     readme_desc = f.read()
 
 setup(
-    name="wworks-lmka",
+    name="wworks",
     packages=find_packages(include=["wworks"]),
     version="0.1.0",
     url='https://github.com/LMKA/wworks',
