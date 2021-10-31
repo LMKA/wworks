@@ -2,9 +2,8 @@
 > a light multiprocessing/multithreading work dispatcher for python.
 
 [![GitHub version](https://badge.fury.io/gh/LMKA%2Fwworks.svg)](https://badge.fury.io/gh/LMKA%2Fwworks)
-[![GitHub Stars](https://badgen.net/github/license/LMKA/wworks)](https://github.com/LMKA/wworks/blob/master/LICENSE)
-
 [![Python compatible versions](https://img.shields.io/badge/python-3.7%20|%203.8%20|%203.9-0b7cbc.svg)](https://shields.io/)
+[![GitHub License](https://badgen.net/github/license/LMKA/wworks)](https://github.com/LMKA/wworks/blob/master/LICENSE)
 
 wworks (Wrapped Works) is a work manager that uses both ProcessPoolExecutor and ThreadPoolExecutor to dispatch work by workload over processes and/or threads.
 
@@ -30,7 +29,7 @@ Install wworks package
 <details open> 
     <summary markdown="span"> WorkManager.<b>work</b>(<b>work_name</b>, <b>work_to_do</b>, <b>work_data</b>) </summary>
 
-Use WorkManager.<b>work</b> to make multithreading for given function.
+> Use WorkManager.<b>work</b> to make multithreading for given function.
     
 ```python
 from wworks.swworks import WorkManager
@@ -57,14 +56,14 @@ Task #7 : multiply(7, 7) => 49
 Task #8 : multiply(8, 8) => 64
 Task #9 : multiply(9, 9) => 81
 ```
-In this case, WorkManager create 10 tasks (threads) to process.
+> In this case, WorkManager create 10 tasks (threads) to process.
 
 </details>
 
 <details open> 
     <summary markdown="span"> WorkManager.<b>chunks</b>(<b>lst</b>, <b>n</b>) </summary>
 
-Use WorkManager.<b>chunks</b> to yield n-sized chunks from lst.
+> Use WorkManager.<b>chunks</b> to yield n-sized chunks from lst.
 ```python
 from wworks.swworks import WorkManager
 
@@ -84,14 +83,14 @@ Chunk #1
 Chunk #2
 [(8, 8), (9, 9)]
 ```
-In this case, WorkManager yield 4-chunks from all provided tuples.
+> In this case, WorkManager yield 4-chunks from all provided tuples.
 
 </details>
 
 <details open> 
     <summary markdown="span"> WorkManager.<b>dispatch</b>(<b>work_to_do</b>, <b>work_data</b>, <b>workload</b>=4) </summary>
 
-Use WorkManager.<b>dispatch</b> to make chunked-by-process, multithreading for given function.
+> Use WorkManager.<b>dispatch</b> to make chunked-by-process, multithreading for given function.
 ```python
 from wworks.swworks import WorkManager
 
@@ -122,7 +121,7 @@ Worker #2
  - Task #0 : multiply(8, 8) => 64
  - Task #1 : multiply(9, 9) => 81
 ```
-In this case, WorkManager create 3 workers (processes) and give each of them chunked work data respectivelly 4, 4 and 2 tasks to process.
+> In this case, WorkManager create 3 workers (processes) and give each of them chunked work data respectivelly 4, 4 and 2 tasks to process.
 
 </details>
 
@@ -141,15 +140,14 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 ---
 ## Contributing
 
-[![GitHub Stars](https://badgen.net/github/stars/LMKA/wworks)](https://github.com/LMKA/wworks/stargazers)
-[![GitHub Forks](https://badgen.net/github/forks/LMKA/wworks)](https://github.com/LMKA/wworks/network/members)
-[![GitHub Contributors](https://badgen.net/github/contributors/LMKA/wworks)](https://github.com/LMKA/wworks/graphs/contributors)
 
+[![GitHub Forks](https://badgen.net/github/forks/LMKA/wworks)](https://github.com/LMKA/wworks/network/members)
 [![GitHub Issues](https://badgen.net/github/issues/LMKA/wworks)](https://github.com/LMKA/wworks/issues)
 [![GitHub PRs](https://badgen.net/github/prs/LMKA/wworks)](https://github.com/LMKA/wworks/pulls)
 [![GitHub Open Issues](https://badgen.net/github/open-issues/LMKA/wworks)](https://GitHub.com/LMKA/wworks/issues?q=is%3Aopen)
 [![GitHub Open PRs](https://badgen.net/github/open-prs/LMKA/wworks)](https://github.com/LMKA/wworks/issues?q=is%3Aopen)
-
+[![GitHub Contributors](https://badgen.net/github/contributors/LMKA/wworks)](https://github.com/LMKA/wworks/graphs/contributors)
+[![GitHub Stars](https://badgen.net/github/stars/LMKA/wworks)](https://github.com/LMKA/wworks/stargazers)
 
 1. Fork it (<https://github.com/LMKA/wworks/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
@@ -172,12 +170,14 @@ Work in progress ...
 
 ---
 ## Meta
+
 [![Twitter Profile url](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=%40melakbir)](https://twitter.com/melakbir)
+
 
 Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/blob/master/LICENSE) for more information.
 
 
-- github: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
+- <b>github</b>: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
 
-- pypi: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
+- <b>pypi</b>: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
 
