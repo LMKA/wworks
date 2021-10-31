@@ -15,10 +15,10 @@ class TasksPool:
     Wrapper arround concurrent.futures.ThreadPoolExecutor used to dispatch work_to_do over its work_data.
 
     Attributes:
-        progress_cols (str, optional): progress bar columns. Defaults to min(80, terminal_size*0.85).
-        progress_color (str, optional): progress bar color if show_progress is enabled. Defaults to '#4052B5'.
-        nb_tasks (int, optional): maximun tasks pool size, should never be greather than 399. Defaults to 64.
-        show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
+        progress_cols (str, optional)  : progress bar columns. Defaults to min(80, terminal_size*0.85).
+        progress_color (str, optional) : progress bar color if show_progress is enabled. Defaults to '#4052B5'.
+        nb_tasks (int, optional)       : maximun tasks pool size, should never be greather than 399. Defaults to 64.
+        show_progress (bool, optional) : show tqdm progress bar if True. Defaults to False.
     
     Methods:
         do ((str, Any, list) -> list)
@@ -32,9 +32,9 @@ class TasksPool:
         """Apply work_to_do accross multiple threads using ThreadPoolExecutor.
 
         Args:
-            work_name (str): work name
-            work_to_do (function): function to apply
-            work_data (list): list of function args
+            work_name (str)       : work name
+            work_to_do (function) : function to apply
+            work_data (list)      : list of function args
 
         Returns:
             list: list of function returns
@@ -76,10 +76,10 @@ class WorkersPool:
     Wrapper arround concurrent.futures.ProcessPoolExecutor used to dispatch work_to_do over its work_data.
 
     Attributes:
-        progress_cols (str, optional): progress bar columns. Defaults to 100.
-        progress_color (str, optional): progress bar color if show_progress is enabled. Defaults to '#00f6ff'.
-        nb_workers (int, optional): number of cpu to use. Defaults to multiprocessing.cpu_count().
-        show_progress (bool, optional): show tqdm progress bar if True. Defaults to False.
+        progress_cols (str, optional)  : progress bar columns. Defaults to 100.
+        progress_color (str, optional) : progress bar color if show_progress is enabled. Defaults to '#00f6ff'.
+        nb_workers (int, optional)     : number of cpu to use. Defaults to multiprocessing.cpu_count().
+        show_progress (bool, optional) : show tqdm progress bar if True. Defaults to False.
 
     Methods:
         do ((str, Any, list) -> list)
@@ -93,9 +93,9 @@ class WorkersPool:
         """Apply work_to_do accross multiple processes using ProcessPoolExecutor.
 
         Args:
-            work_name (str): work name
-            work_to_do (function): function to apply
-            work_data (list): list of function args
+            work_name (str)       : work name
+            work_to_do (function) : function to apply
+            work_data (list)      : list of function args
 
         Returns:
             list: list of function returns
