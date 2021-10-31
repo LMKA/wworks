@@ -28,6 +28,7 @@ Install wworks package
 
 <details open> 
     <summary markdown="span"> WorkManager.<b>work</b>(<b>work_name</b>, <b>work_to_do</b>, <b>work_data</b>) </summary>
+</br>
 
 > Use WorkManager.<b>work</b> to make multithreading for given function.
     
@@ -56,14 +57,16 @@ Task #7 : multiply(7, 7) => 49
 Task #8 : multiply(8, 8) => 64
 Task #9 : multiply(9, 9) => 81
 ```
-> In this case, WorkManager create 10 tasks (threads) to process.
+In this case, WorkManager create 10 tasks (threads) to process.
 
 </details>
 
 <details open> 
     <summary markdown="span"> WorkManager.<b>chunks</b>(<b>lst</b>, <b>n</b>) </summary>
+</br>
 
 > Use WorkManager.<b>chunks</b> to yield n-sized chunks from lst.
+
 ```python
 from wworks.swworks import WorkManager
 
@@ -83,12 +86,13 @@ Chunk #1
 Chunk #2
 [(8, 8), (9, 9)]
 ```
-> In this case, WorkManager yield 4-chunks from all provided tuples.
+In this case, WorkManager yield 4-chunks from all provided tuples.
 
 </details>
 
 <details open> 
     <summary markdown="span"> WorkManager.<b>dispatch</b>(<b>work_to_do</b>, <b>work_data</b>, <b>workload</b>=4) </summary>
+</br>
 
 > Use WorkManager.<b>dispatch</b> to make chunked-by-process, multithreading for given function.
 ```python
@@ -121,7 +125,7 @@ Worker #2
  - Task #0 : multiply(8, 8) => 64
  - Task #1 : multiply(9, 9) => 81
 ```
-> In this case, WorkManager create 3 workers (processes) and give each of them chunked work data respectivelly 4, 4 and 2 tasks to process.
+In this case, WorkManager create 3 workers (processes) and give each of them chunked work data respectivelly 4, 4 and 2 tasks to process.
 
 </details>
 
