@@ -140,7 +140,6 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 * 0.1.0
     * First version of wworks package
 
-
 ---
 ## Contributing
 
@@ -160,19 +159,6 @@ In this case, WorkManager create 3 workers (processes) and give each of them chu
 5. Create a new Pull Request
 
 ---
-## FAQ
-
-
-
-
-```sh
-Work in progress ...
-```
-
-
-
-
----
 ## Meta
 
 [![Twitter Profile url](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=%40melakbir)](https://twitter.com/melakbir)
@@ -183,5 +169,5 @@ Distributed under the MIT license. See [LICENSE](https://github.com/LMKA/wworks/
 
 - <b>github</b>: [https://github.com/LMKA/wworks](https://github.com/LMKA/wworks)
 
-- <b>pypi</b>: [https://pypi.org/project/wworks](https://pypi.org/project/wworks])
+- <b>pypi</b>: [https://pypi.org/project/wworks](https://pypi.org/project/wworks)
 
